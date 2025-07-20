@@ -38,7 +38,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand className="d-flex">
           <img src={sv} className="img-fluid logo" alt="brand" style= {{height:"100px"}} />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -46,7 +46,7 @@ function NavBar() {
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
           }}
-        >
+        > 
           <span></span>
           <span></span>
           <span></span>
